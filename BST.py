@@ -62,7 +62,7 @@ class TreeNode:
             if node.right != None and node.left != None:
                 node.value = self.findSuccessor(node);
                 
-            if node.right != None and node.left == None || node.left != None and node.right == None:
+            if node.right != None and node.left == None or node.left != None and node.right == None:
                 swap();            
             
 class BinarySearchTree:

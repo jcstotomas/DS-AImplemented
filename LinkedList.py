@@ -27,8 +27,25 @@ class LL:
         while current != None:
             if current.value == value:
                 previous.next = current.next
-
+                current = current.next;
             else:
                 previous = current;
                 current = current.next;
-                
+    def print(self):
+        p = self.head;
+
+        while p!= None:
+            print(p.value);
+            p = p.next;
+
+
+ll = LL()
+ll.insert("A");
+ll.insert("B")
+ll.insert("C")
+ll.insert("D")
+ll.insert("E")
+ll.print()
+print("Deleted")
+ll.delete("A")
+ll.print()
